@@ -57,3 +57,7 @@ defctrl MyController ?
 the help would show you all properties that should be filled for this controller class.
 
 Additionally, if you use it for a pseudo controller, it could show all roles (separated between physical and pseudo) that are required for this pseudo controller class.
+
+## `edctrl` and `edctrllib` to use Git as a VCS
+
+If you make amendments to a controller (or a library of those), it would be great if it would automatically save the file and make a Git commit there (provided the controller is in a Git repository). That way you'd be able to keep track of every change that someone might make to your production controllers.
