@@ -48,3 +48,12 @@ i.e. equal accaleration and deceleration times and proportional velocities so th
 ## It could be interesting to access the 0D's beffers in the pseudo counters, how to do it properly?
 
 ## It could be interesting to access the backlash value in the motor controller plugin.
+
+## Additional help for a controller class when you're defining one with `defctrl`
+It would be great if when you type:
+```
+defctrl MyController ?
+```
+the help would show you all properties that should be filled for this controller class.
+
+Additionally, if you use it for a pseudo controller, it could show all roles (separated between physical and pseudo) that are required for this pseudo controller class.
