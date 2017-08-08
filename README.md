@@ -28,7 +28,7 @@ Then, if we want to try to reload the module adain, we have to use the `addmacli
 
 If a path is not present in the `MacroPath` it is not possible to add a macro module located in this path to the system using the `edmac`
 
-## Documentation abou the core should be written
+## Documentation about the core should be written
 
 * Class diagrams describing the most relevant parts of the core could be added to the documentation (developers).
 * The core python modules could be better documented (docstrings).
@@ -65,3 +65,7 @@ If you make amendments to a controller (or a library of those), it would be grea
 ## Bug: `defelem` doesn't automatically increment axis number
 
 When you try to add an element to a controller that already has elements and you don't specify the axis number, you might get an error. It looks like the automatic discovery of the lowest non-ocuppied axis number doesn't work.
+
+## Difference between `StopOne` and `AbortOne` in a `CTController` class
+
+The idea is that stopping acquisition lets the current acquisition to be finished and the whole process be stopped after that. The abort, on the other hand, would try to "kill" the acquisition instantly.
