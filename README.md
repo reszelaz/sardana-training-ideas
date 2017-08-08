@@ -3,6 +3,15 @@
 ## Plugin system discovery based on modules
 
 The plugin system could discover the plugin classes based on explicit declaration of modules to be scanned.
+Instead of setting the `MacroPath` as a list of paths to be scanned, we could rather do the following:
+```
+MacroPath = ["my_pkg.macros.macro1", "my_pkg.macros.macros.macro2"]
+```
+or even:
+```
+MacroPath = ["my_pkg.macros"]
+```
+and let the Sardana scan all members of the module for those that are subclasses of the `Macro` class.
 
 ## Inheritance between the plugin classes is possible if the plugin classes are just defined in the PoolPath and not in the PythonPath
 
