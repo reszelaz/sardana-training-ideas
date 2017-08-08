@@ -61,3 +61,7 @@ Additionally, if you use it for a pseudo controller, it could show all roles (se
 ## `edctrl` and `edctrllib` to use Git as a VCS
 
 If you make amendments to a controller (or a library of those), it would be great if it would automatically save the file and make a Git commit there (provided the controller is in a Git repository). That way you'd be able to keep track of every change that someone might make to your production controllers.
+
+## Bug: `defelem` doesn't automatically increment axis number
+
+When you try to add an element to a controller that already has elements and you don't specify the axis number, you might get an error. It looks like the automatic discovery of the lowest non-ocuppied axis number doesn't work.
