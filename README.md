@@ -76,3 +76,11 @@ There are two possible solutions:
 
 1. A temporary one: in `poolcontroller`'s method `_read_axis_value` add checking if the value returned by a controller is numeric (you can use `sardanautils.is_numeric` method for that). It should be done after translation (change the list comprehension to a normal loop and check it there for chunks). Add a TODO there to change it once a premanent solution is ready.
 2. A premanent one: a type to `SardanaAttribute` and check it always if an attribute's value is of that type. Handle all types wherever that might be necessary.
+
+## Add a ViewOption for an order of motors for `wa` macro
+
+It'd be nice to have a configurable order in which `wa` macro displays motors. It could have the following values:
+* `alphabetic`
+* a list of explicit motor aliases
+* a list of instruments
+* a list of regular expressions to be matched
