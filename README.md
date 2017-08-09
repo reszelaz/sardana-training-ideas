@@ -84,3 +84,7 @@ It'd be nice to have a configurable order in which `wa` macro displays motors. I
 * a list of explicit motor aliases
 * a list of instruments
 * a list of regular expressions to be matched
+
+## Bug: scans can't be used after `MacroServer`'s `Init` command
+
+When you issue `Init` command to a `MacroServer`, you won't be able to run scans afterwards.
